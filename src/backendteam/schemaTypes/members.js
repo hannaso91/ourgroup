@@ -22,7 +22,7 @@ export const members =
             {
                 name: 'email',
                 title: 'E-mail',
-                type: 'string'
+                type: 'string',
             },
             {
                 name: 'image',
