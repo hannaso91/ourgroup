@@ -9,11 +9,7 @@ export const members =
                 title: 'Navn',
                 type: 'string'
             },
-            {
-                name: 'role',
-                title: 'Rolle',
-                type: 'string'
-            },
+            
             {
                 name: 'age',
                 title: 'Alder',
@@ -33,7 +29,20 @@ export const members =
                 name: 'description',
                 title: 'Om',
                 type: 'text'
-            }
+            },
+            {
+                name: 'slug',
+                title: 'Slug',
+                type: 'slug',
+                options: { // hentet fra: https://www.sanity.io/docs/slug-type
+                    source: 'name',
+                    maxLength: 200, 
+                    slugify: input => input
+                                         .toLowerCase()
+                                         .replace(/\s+/g, '-')
+                                         .slice(0, 200)
+                  }
+            },
         ]
     }
 
