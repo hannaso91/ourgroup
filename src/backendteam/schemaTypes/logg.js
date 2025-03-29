@@ -12,6 +12,12 @@ export const logg = {
                     type: 'object', //hentet fra: https://www.sanity.io/docs/object-type
                     fields: [
                         {
+                            name: 'personname',
+                            title: 'Uført av',
+                            type: 'reference',
+                            to: [{type: 'person'}] // Viser til det som ligger i members.js
+                        },
+                        {
                             name: 'description',
                             title: 'Beskrivelse',
                             type: 'text'
