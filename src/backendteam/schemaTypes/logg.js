@@ -15,7 +15,7 @@ export const logg = {
                             name: 'personname',
                             title: 'Uført av',
                             type: 'reference',
-                            to: [{type: 'person'}] // Viser til det som ligger i members.js
+                            to: [{type: 'person'}] // Viser til det som ligger i members.js slik at vi kan bruke noe som allerede er laget inn her
                         },
                         {
                             name: 'description',
