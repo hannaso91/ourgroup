@@ -5,6 +5,7 @@ export default function Layout({children}) {
         <>
         <header>
             <nav>
+                <p>Gruppe 13 - Team DOMination</p> 
                 <ul>
                     <li><Link to="Jimmy">Jimmy</Link></li>
                     <li><Link to="Oda">Oda</Link></li>
