@@ -3,6 +3,8 @@ import './App.css'
 import Layout from './components/Layout'
 import MemberCard from './components/MemberCard'
 import Home from './components/Home'
+import MemberLayout from './components/MemberLayout'
+
 
 function App() {
   
@@ -12,7 +14,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path='member/:slugmember' element={<MemberCard />} />
+          <Route path='member/:slugmember' element={<MemberLayout />} />
         </Routes>
       </Layout>
     </>
