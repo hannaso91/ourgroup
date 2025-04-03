@@ -1,5 +1,5 @@
 export const logg = {
-    name: 'log',
+    name: 'logg',
     title: 'arbeidslogg',
     type: 'document',
     fields: [
