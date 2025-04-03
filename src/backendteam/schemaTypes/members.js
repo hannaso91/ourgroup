@@ -40,6 +40,9 @@ export const members =
                     slugify: input => input
                                          .toLowerCase()
                                          .replace(/\s+/g, '-')
+                                         .replace('æ', 'ae')
+                                         .replace('ø', 'o')
+                                         .replace('å', 'a')
                                          .slice(0, 200)
                   }
             },
