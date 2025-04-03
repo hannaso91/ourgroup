@@ -1,9 +1,12 @@
-import MemberCard from "./MemberCard";
+import MembersCard from "./MembersCard";
 
-export default function Home() {
-    <section>
-        <h1>Gruppemedlemmer</h1> {/*Denne må gjøres dynamisk basert på brukerinput*/}
-        <MemberCard /> {/*Her skal vi mappe ut alle medlemmene, tror jeg. Hvis ikke er det i membercard. Ettersom dette er parent av membercard vil jeg tro det er best å gjøre det her?*/}
-    </section>
+
+export default function Home({members}) {
+    return(
+        <section>
+            <h1>Gruppemedlemmer</h1> {/*Denne må gjøres dynamisk basert på brukerinput*/}
+            <MembersCard memberCard={members} /> 
+        </section>
+    )
     
 }
