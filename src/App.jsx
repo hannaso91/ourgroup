@@ -29,8 +29,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home members={members}/>} />
           <Route path='member/:slugmember' element={<MemberLayout />} />
-          
-          
         </Routes>
       </Layout>
     </>
