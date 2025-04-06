@@ -19,7 +19,7 @@ export default function Layout({children}) {
             {children}
         </main>
         <footer>
-            <p>Her kommer det litt info</p>
+            <p>Grupper 13</p>
         </footer>
         </>
     )
