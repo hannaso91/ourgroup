@@ -6,3 +6,7 @@ export async function fetchMembersByCard() {
     return data;
 }
 
+export async function fetchMemberBySLug() {
+    const data = await client.fetch(`*[_type == "person"]{_id, slug, name, description, email, image, age}`)
+    return data;
+}
