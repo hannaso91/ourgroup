@@ -4,34 +4,42 @@ import { useParams } from "react-router-dom"
 import { fetchMemberData } from "../sanity/memberServices"
 
 export default function MemberLayout(){
-    const [member, setMember] = useState(null)
+    const [member, setMember] = useState()
     const {slugmember} = useParams()
+
+    console.log("Slug som kommer fra URL", slugmember)
     
-    const memberPage = async(slugmember) => {
-        const data = await fetchMemberData(slugmember) 
+    const memberPage = async() => {
+        const data = await fetchMemberData(slugmember)
         setMember(data) 
     }
 
     console.log(member)
 
     useEffect(()=>{
+        if(!slugmember) {
+            console.log("Slugmember finnes ikke")
+            return;
+        }
+
         memberPage()
     },[slugmember])
 
     return (
         <>
-            {member?.map((person)=>(
+            {member ? (
                 <>
-                <h2 key={person._id}>{person.name}</h2>
-                <article>
-                    <img src={person.image.asset.url} alt="bilde av gruppemedlem"/>
-                    <p>{person.age}</p>
-                    <p>{person.email}</p>
-                    <p>{person.description}</p>
-                </article>
-                </>
-            ))}
-            
+            <h2 key={member._id}>{member.name}</h2>
+            <article>
+                <img src={member.image?.asset?.url} alt="bilde av gruppemedlem"/>
+                <p>{member.age}</p>
+                <p>{member.email}</p>
+                <p>{member.description}</p>
+            </article>
+            </>
+            ) : (
+                <p>Forsøker å finne medlem.</p>
+            )}
         </>
     )
 }
