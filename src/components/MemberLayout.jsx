@@ -54,7 +54,12 @@ export default function MemberLayout(){
                 <article key={log._id}>
                     <p>Utført av: {log.personName.name}</p>
                     <p>{log.task}</p>
-                    <p>{new Date (log.date).toDateString()}</p>
+                    <p>{new Date(log.date).toLocaleDateString("no-NO", {
+                            day: "2-digit",
+                            month: "2-digit",
+                            year: "numeric"
+                        })}
+                    </p>
                     <p>{log.timeused}</p>
                 </article>
 
