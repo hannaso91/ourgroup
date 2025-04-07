@@ -2,9 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Layout from './components/Layout'
 import MemberLayout from './components/MemberLayout'
-
 import Home from './components/Home'
-import MembersCard from './components/MembersCard'
 import { fetchMembersByCard } from './sanity/memberServices'
 import { useEffect, useState } from 'react'
 import { getAllLogs } from './sanity/logg'
@@ -13,6 +11,7 @@ function App() {
   
   const [members, setMembers] = useState([])
   const [logg, setLogg] = useState([])
+  
 
 
   const memberCard = async() => {
@@ -26,6 +25,8 @@ function App() {
 
   }
 
+  
+
   useEffect(() => {
     memberCard(),
     loggTask()
@@ -35,7 +36,7 @@ function App() {
     <>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home members={members} loggTask={loggTask} logg={logg} setLogg={setLogg}/>} />
+          <Route path="/" element={<Home members={members} logg={logg}/>} />
           <Route path='member/:slugmember' element={<MemberLayout />} />
         </Routes>
       </Layout>

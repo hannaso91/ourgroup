@@ -1,4 +1,4 @@
-export default function Logg({ loggTask, logg, setLogg }) {
+export default function Logg({  logg }) {
     return (
         <>
             <h2>Gruppelogg</h2>

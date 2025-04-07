@@ -2,12 +2,12 @@ import Logg from "./Logg";
 import MembersCard from "./MembersCard";
 
 
-export default function Home({members, loggTask, logg, setLogg}) {
+export default function Home({members, logg }) {
     return(
         <section>
             <h1>Gruppemedlemmer</h1> {/*Denne må gjøres dynamisk basert på brukerinput*/}
             <MembersCard memberCard={members}/>
-            <Logg loggTask={loggTask} logg={logg} setLogg={setLogg}/> 
+            <Logg  logg={logg} /> 
         </section>
     )
     
