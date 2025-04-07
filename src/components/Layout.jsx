@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import logo from '../pictures/DOMinationLogo.png'
+import logo from '../pictures/DOMinationLogo.png' // fant ut av denne måten å gjøre det på her https://stackoverflow.com/questions/43823289/how-to-import-image-svg-png-in-a-react-component
 
 export default function Layout({children}) {
     return(
         <>
         <header>
             <nav>
-                <img src={logo} alt="Vår logo"/>
+                <Link to="/"><img src={logo} alt="Vår logo"/></Link>
                 <ul>
                     <li><Link to="/">Hjem</Link></li>
                     <li><Link to="member/jimmy-ostby">Jimmy</Link></li>
