@@ -7,10 +7,12 @@ import Home from './components/Home'
 import MembersCard from './components/MembersCard'
 import { fetchMembersByCard } from './sanity/memberServices'
 import { useEffect, useState } from 'react'
+import { getAllLogs } from './sanity/logg'
 
 function App() {
   
   const [members, setMembers] = useState([])
+  const [logg, setLogg] = useState([])
 
 
   const memberCard = async() => {
@@ -18,16 +20,22 @@ function App() {
     setMembers(data)
   }
 
+  const loggTask = async() => {
+    const data = await getAllLogs()
+    setLogg(data)
+
+  }
 
   useEffect(() => {
-    memberCard()
+    memberCard(),
+    loggTask()
   }, [])
 
   return (
     <>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home members={members}/>} />
+          <Route path="/" element={<Home members={members} loggTask={loggTask} logg={logg} setLogg={setLogg}/>} />
           <Route path='member/:slugmember' element={<MemberLayout />} />
         </Routes>
       </Layout>
