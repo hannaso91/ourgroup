@@ -1,0 +1,32 @@
+
+main{
+
+    background-color: #646464;
+    padding: 20px;
+
+        article{
+            display: flex;
+            flex-direction: column;
+            max-width: 375px;
+            max-height: auto;
+
+           img{
+            padding: 20px;
+           }
+                p{
+                    margin: 10px 0px 0px 20px;
+                    padding:0;
+                    text-align: left;
+                    font-weight: bold;
+                }
+
+
+        }
+    
+}
+
+#overskrift{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 40px;
+}
