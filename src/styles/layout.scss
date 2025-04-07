@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                list-style: none;
+
+                a{
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
