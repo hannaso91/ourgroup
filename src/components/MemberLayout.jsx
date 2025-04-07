@@ -34,8 +34,8 @@ export default function MemberLayout(){
             <article>
                 <img src={member.image?.asset?.url} alt="bilde av gruppemedlem"/>
                 <h2 key={member._id}>{member.name}</h2>
-                <p>{member.age}</p>
-                <p>{member.email}</p>
+                <p><b>Alder:</b>{member.age}</p>
+                <p><b>Mail:</b>{member.email}</p>
                 <p>{member.description}</p>
             </article>
             
