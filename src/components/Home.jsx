@@ -1,4 +1,5 @@
 import MembersCard from "./MembersCard";
+import "../styles/home.scss"
 
 
 export default function Home({members}) {
