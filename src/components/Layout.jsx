@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import logo from '../pictures/DOMinationLogo.png'
 
 export default function Layout({children}) {
     return(
         <>
         <header>
             <nav>
-                <p>Gruppe 13 - Team DOMination</p> 
+                <img src={logo} alt="Vår logo"/>
                 <ul>
                     <li><Link to="/">Hjem</Link></li>
                     <li><Link to="member/jimmy-ostby">Jimmy</Link></li>
