@@ -53,6 +53,7 @@ export default function MemberLayout(){
             {personLogg.map(log => (
                 <article key={log._id}>
                     <p>Utført av: {log.personName.name}</p>
+                    <p>{log.task}</p>
                     <p>{new Date (log.date).toDateString()}</p>
                     <p>{log.timeused}</p>
                 </article>
