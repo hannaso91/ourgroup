@@ -5,11 +5,12 @@ export default function Layout({children}) {
         <>
         <header>
             <div className="logo">
-                <p>LOGO HER</p> 
-                <p><Link to="/">Hjem</Link></p>
+                <img src="images/DOMinationLogo.png"></img>
+
             </div>
             <nav>
                 <ul>
+                    <li className="hjem"><Link to="/">Hjem</Link></li>
                     <li><Link to="member/jimmy-ostby">Jimmy</Link></li>
                     <li><Link to="member/oda-julsen">Oda</Link></li>
                     <li><Link to="member/signe-sofie-jansen">Signe</Link></li>
@@ -21,7 +22,7 @@ export default function Layout({children}) {
             {children}
         </main>
         <footer>
-            <p>Grupper 13</p>
+            <p>Gruppe 13</p>
         </footer>
         </>
     )
