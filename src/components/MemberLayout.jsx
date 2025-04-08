@@ -3,6 +3,7 @@ import { useState } from "react"
 import { useParams } from "react-router-dom"
 import { fetchMemberData } from "../sanity/memberServices"
 import "../styles/member.scss"
+import "../styles/logg2.scss"
 import { getLoggBySlug } from "../sanity/logg"
 
 export default function MemberLayout(){
@@ -56,7 +57,7 @@ export default function MemberLayout(){
             )}
 
             {personLogg.map(log => (
-                <article key={log._id}>
+                <article className="loggsection" key={log._id}>
                     <p>Utført av: {log.personName.name}</p>
                     <p>{log.task}</p>
                     <p>{new Date(log.date).toLocaleDateString("no-NO", {
