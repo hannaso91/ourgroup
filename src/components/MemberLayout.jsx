@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 import { useParams } from "react-router-dom"
 import { fetchMemberData } from "../sanity/memberServices"
+import "../styles/member.scss"
 import { getLoggBySlug } from "../sanity/logg"
 
 export default function MemberLayout(){
@@ -38,13 +39,17 @@ export default function MemberLayout(){
         <>
             {member ? (
                 <>
-            <h2 key={member._id}>{member.name}</h2>
+            
             <article>
                 <img src={member.image?.asset?.url} alt="bilde av gruppemedlem"/>
-                <p>{member.age}</p>
-                <p>{member.email}</p>
-                <p>{member.description}</p>
+                <h2 key={member._id}>{member.name}</h2>
+                <p><b>Alder:</b>{member.age}</p>
+                <p><b>Mail:</b>{member.email}</p>
             </article>
+            <article className="mengdetekst">
+            <p>{member.description}</p>
+            </article>
+            
             </>
             ) : (
                 <p>Forsøker å finne medlem.</p>
