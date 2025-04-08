@@ -39,7 +39,6 @@ export default function MemberLayout(){
         <>
             {member ? (
                 <>
-            
             <article>
                 <img src={member.image?.asset?.url} alt="bilde av gruppemedlem"/>
                 <h2 key={member._id}>{member.name}</h2>
@@ -47,9 +46,8 @@ export default function MemberLayout(){
                 <p><b>Mail:</b>{member.email}</p>
             </article>
             <article className="mengdetekst">
-            <p>{member.description}</p>
+                <p>{member.description}</p>
             </article>
-            
             </>
             ) : (
                 <p>Forsøker å finne medlem.</p>
