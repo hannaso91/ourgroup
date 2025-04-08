@@ -1,5 +1,6 @@
 import Logg from "./Logg";
 import MembersCard from "./MembersCard";
+import "../styles/home.scss"
 
 
 export default function Home({members, logg }) {
@@ -10,5 +11,4 @@ export default function Home({members, logg }) {
             <Logg  logg={logg} /> 
         </section>
     )
-    
 }

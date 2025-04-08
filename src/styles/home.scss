@@ -1,0 +1,88 @@
+:root{
+    background-color: #ffff;
+}
+main section{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+/*#overskrift{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    color: #FFD2F5;
+}*/
+
+#fetnavn{
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.forsidegruppe{
+    width: 100%;
+    background-color: #C4E1C5;
+    padding: 50px;
+
+
+        img{
+            width: 250px;
+            max-height: auto;
+            border: 2px solid #62b265;
+        }
+        
+                p{
+                    margin: 10px 0px 0px 5px;
+                    /*margin: 10px 0px 0px 5px;*/
+                    padding:0;
+                    color: #000;
+                    text-align: center;
+                    }
+        
+}
+
+
+@media (max-width: 768px) {
+
+    main section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .forsidegruppe{
+
+        width: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #C4E1C5;
+        padding: 20px;
+
+        img{
+            margin-top: 50px;
+            width: 250px;
+            height: auto;
+        }
+    
+       /* background-color: #C4E1C5;
+        padding: 20px;
+        max-width: 300px;
+    
+    
+            img{
+                width: 250px;
+                max-height: auto;
+                border: 2px solid #62b265;
+            }
+            
+                    p{
+                        margin: 10px 0px 0px 25px;
+                        padding:0;
+                        text-align: left;
+                        font-weight: bold;
+                        color: #000;
+                        }*/
+            
+    }
+
+}
