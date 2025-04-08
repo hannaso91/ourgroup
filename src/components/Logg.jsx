@@ -1,24 +1,26 @@
+import "../styles/logg.scss"
+
 export default function Logg({  logg }) {
     return (
         <>
-        <div>
+        <div className="loggcontainer">
             <h2>Gruppelogg</h2>
             {logg.map((log) => (
-                <section key={log._id} className="tester">
-                    <article>
-                        <p>{log.personName.name}</p>
-                        <p>{log.task}</p>
-                        <p>{new Date(log.date).toLocaleDateString("no-NO", {
-                                day: "2-digit",
-                                month: "2-digit",
-                                year: "numeric"
-                            })}
-                        </p>
-                        <p>{log.timeused}</p>
-                    </article>
+                <section key={log._id}>
+                <article className="loggforinger">
+                    <p id="fatname">{log.personName.name}</p>
+                    <p>{log.task}</p>
+                    <p id="fatdate">{new Date(log.date).toLocaleDateString("no-NO", {
+                            day: "2-digit",
+                            month: "2-digit",
+                            year: "numeric"
+                        })}
+                    </p>
+                    <p>{log.timeused}</p>
+                </article>
                 </section>
             ))}
-        </div>   
+        </div>
         </>
     );
 }
