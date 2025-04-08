@@ -12,8 +12,6 @@ function App() {
   const [members, setMembers] = useState([])
   const [logg, setLogg] = useState([])
   
-
-
   const memberCard = async() => {
     const data = await fetchMembersByCard()
     setMembers(data)
@@ -24,8 +22,6 @@ function App() {
     setLogg(data)
 
   }
-
-  
 
   useEffect(() => {
     memberCard(),
