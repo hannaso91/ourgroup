@@ -4,10 +4,10 @@ export default function Layout({children}) {
     return(
         <>
         <header>
-            <article className="logo">
-        <p>LOGO HER</p> 
-        <p><Link to="/">Hjem</Link></p>
-            </article>
+            <div className="logo">
+                <p>LOGO HER</p> 
+                <p><Link to="/">Hjem</Link></p>
+            </div>
             <nav>
                 <ul>
                     <li><Link to="member/jimmy-ostby">Jimmy</Link></li>
