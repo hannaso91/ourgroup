@@ -7,7 +7,7 @@ export default function MembersCard({ memberCard }) {
         {memberCard?.map((member) => (
           <article className="forsidegruppe" key={member._id}>
             <img src={member.image.asset.url} alt="bilde av gruppemedlem"/>
-            <p>{member.name}</p>
+            <p id="fetnavn">{member.name}</p>
             <p>{member.email}</p>
           </article>
         ))}
