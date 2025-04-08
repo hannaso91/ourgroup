@@ -1,20 +1,24 @@
 export default function Logg({  logg }) {
     return (
         <>
+        <div>
             <h2>Gruppelogg</h2>
             {logg.map((log) => (
-                <article key={log._id}>
-                    <p>{log.personName.name}</p>
-                    <p>{log.task}</p>
-                    <p>{new Date(log.date).toLocaleDateString("no-NO", {
-                            day: "2-digit",
-                            month: "2-digit",
-                            year: "numeric"
-                        })}
-                    </p>
-                    <p>{log.timeused}</p>
-                </article>
+                <section key={log._id} className="tester">
+                    <article>
+                        <p>{log.personName.name}</p>
+                        <p>{log.task}</p>
+                        <p>{new Date(log.date).toLocaleDateString("no-NO", {
+                                day: "2-digit",
+                                month: "2-digit",
+                                year: "numeric"
+                            })}
+                        </p>
+                        <p>{log.timeused}</p>
+                    </article>
+                </section>
             ))}
+        </div>   
         </>
     );
 }
