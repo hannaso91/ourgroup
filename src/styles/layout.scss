@@ -1,37 +1,41 @@
 .logo{
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
 }
-
+.hjem{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 header{
-    background-color: aqua;
+    box-sizing: border-box;
+    background-color: #D2F6FF;
     height: 100%;
+
+    p{
+        display: inline-block;
+        margin: 0;
+    }
     
     nav{
+        display: flex;
+        justify-content: center;
        
         ul{
             margin: 0;
+            padding: 10px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             li{
                 display: inline-block;
+                padding: 10px;
                 list-style: none;
                 padding-bottom: 30px;
 
                 :hover{
-                    background-color: black;
                     color: white;
-                    padding: 5px;
-                }
-
-
-               
-                .home{
-                    margin-right: auto;
                 }
 
                 a{

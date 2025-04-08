@@ -4,10 +4,12 @@ export default function Layout({children}) {
     return(
         <>
         <header>
-        <p className="logo">LOGO HER</p> 
+            <article className="logo">
+        <p>LOGO HER</p> 
+        <p><Link to="/">Hjem</Link></p>
+            </article>
             <nav>
                 <ul>
-                    <li className="hjem"><Link to="/">Hjem</Link></li>
                     <li><Link to="member/jimmy-ostby">Jimmy</Link></li>
                     <li><Link to="member/oda-julsen">Oda</Link></li>
                     <li><Link to="member/signe-sofie-jansen">Signe</Link></li>
