@@ -25,9 +25,10 @@ export default function Layout({children}) {
             {children}
         </main>
         <footer>
-            <p>Gruppe 13</p>
-            <p>Hvorfor ble foreleseren i programmering arrestert?
-Fordi han hadde for mange klasser uten innhold.</p>
+            <p className="gruppenavn">Gruppe 13</p>
+            <p>Semesterets vits:</p>
+            <p>"Hvorfor ble foreleseren i programmering arrestert?
+Fordi han hadde for mange klasser uten innhold."</p>
         </footer>
         </>
     )
