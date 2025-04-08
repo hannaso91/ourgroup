@@ -1,13 +1,41 @@
+.logo{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+
+
 header{
-    display: flex;
+    background-color: aqua;
+    height: 100%;
+    
     nav{
+       
         ul{
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             li{
                 display: inline-block;
                 list-style: none;
+                padding-bottom: 30px;
+
+                :hover{
+                    background-color: black;
+                    color: white;
+                    padding: 5px;
+                }
+
+
+               
+                .home{
+                    margin-right: auto;
+                }
 
                 a{
-                    padding-left: 10px;
+                    color: black;
                 }
             }
         }

@@ -4,10 +4,10 @@ export default function Layout({children}) {
     return(
         <>
         <header>
+        <p className="logo">LOGO HER</p> 
             <nav>
-                <p>Gruppe 13 - Team DOMination</p> 
                 <ul>
-                    <li><Link to="/">Hjem</Link></li>
+                    <li className="hjem"><Link to="/">Hjem</Link></li>
                     <li><Link to="member/jimmy-ostby">Jimmy</Link></li>
                     <li><Link to="member/oda-julsen">Oda</Link></li>
                     <li><Link to="member/signe-sofie-jansen">Signe</Link></li>
