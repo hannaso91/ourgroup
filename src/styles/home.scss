@@ -1,18 +1,23 @@
 :root{
     background-color: #ffff;
 }
-
-#overskrift{
-    text-transform: uppercase;
-    font-size: 30px;
-    text-align: left;
+main section{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
-.forsidegruppe{
+/*#overskrift{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    color: #FFD2F5;
+}*/
 
+.forsidegruppe{
+    width: 100%;
     background-color: #C4E1C5;
-    padding: 20px;
-    max-width: 300px;
+    padding: 50px;
 
 
         img{
@@ -26,11 +31,47 @@
                     padding:0;
                     text-align: left;
                     font-weight: bold;
+                    color: #000;
                     }
         
 }
 
-@media screen and (max-width: 1500px){
 
+@media (max-width: 768px) {
+
+    main section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*#overskrift{
+        text-transform: uppercase;
+        font-size: 30px;
+        text-align: left;
+        color: #FFD2F5;
+    }*/
+    
+    .forsidegruppe{
+    
+        background-color: #C4E1C5;
+        padding: 20px;
+        max-width: 300px;
+    
+    
+            img{
+                width: 250px;
+                max-height: auto;
+                border: 2px solid #62b265;
+            }
+            
+                    p{
+                        margin: 10px 0px 0px 25px;
+                        padding:0;
+                        text-align: left;
+                        font-weight: bold;
+                        color: #000;
+                        }
+            
+    }
 
 }
