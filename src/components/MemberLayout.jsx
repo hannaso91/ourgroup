@@ -36,7 +36,9 @@ export default function MemberLayout(){
                 <h2 key={member._id}>{member.name}</h2>
                 <p><b>Alder:</b>{member.age}</p>
                 <p><b>Mail:</b>{member.email}</p>
-                <p className="mengdetekst">{member.description}</p>
+            </article>
+            <article className="mengdetekst">
+            <p>{member.description}</p>
             </article>
             
             </>
