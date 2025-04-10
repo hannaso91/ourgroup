@@ -1,16 +1,22 @@
-/*{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}*/
+html, body{
+    margin: 0;
+}
+
+#gruppeoverskrift{
+    color: #C4E1C5;
+    text-align: center;
+}
 
 .loggcontainer{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
     background-color:#C9A48C ;
     border-style: solid;
     border-color: #FFD2F5;
-    width: 100%;
+    width: 600px;
+    padding: 10px;
 }
 
 .loggforinger{
@@ -34,13 +40,14 @@
     font-weight: bolder;
 }
 
-@media screen and (max-width: 400px),(min-width:1500px){
+@media screen and (max-width: 400px),(min-width:4000px){
     .loggcontainer{
         background-color:#C9A48C ;
         border-style: solid;
         border-color: #FFD2F5;
         width: 300px;
         padding: 4px;
+        margin: 0 auto;
 
             p{
                 display: flex;

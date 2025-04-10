@@ -3,8 +3,8 @@ import "../styles/logg.scss"
 export default function Logg({  logg }) {
     return (
          <>
+         <h2 id="gruppeoverskrift">Gruppelogg</h2>
         <div className="loggcontainer">
-            <h2>Gruppelogg</h2>
             {logg.map((log) => (
                 <article className="loggforinger"key={log._id}>
                     <p id="fatname">{log.personName.name}</p>
