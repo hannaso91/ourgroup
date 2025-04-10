@@ -3,6 +3,7 @@ import { useState } from "react"
 import { useParams } from "react-router-dom"
 import { fetchMemberData } from "../sanity/memberServices"
 import "../styles/member.scss"
+import "../styles/logg2.scss"
 import { getLoggBySlug } from "../sanity/logg"
 
 export default function MemberLayout(){
@@ -39,6 +40,7 @@ export default function MemberLayout(){
         <>
             {member ? (
                 <>
+            <section className="bildetekst">
             <article>
                 <img src={member.image?.asset?.url} alt="bilde av gruppemedlem"/>
                 <h2 key={member._id}>{member.name}</h2>
@@ -48,11 +50,14 @@ export default function MemberLayout(){
             <article className="mengdetekst">
                 <p>{member.description}</p>
             </article>
+            </section>
+            
             </>
+        
             ) : (
                 <p>Forsøker å finne medlem.</p>
             )}
-
+            <div className="loggsection" >
             {personLogg.map(log => (
                 <article key={log._id}>
                     <p>Utført av: {log.personName.name}</p>
@@ -65,8 +70,8 @@ export default function MemberLayout(){
                     </p>
                     <p>{log.timeused}</p>
                 </article>
-
             ))}
+            </div>
         </>
        
     )
