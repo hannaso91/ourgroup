@@ -1,9 +1,27 @@
 
+html, body {
+    width: 100%;
+    overflow-x: hidden; // forhindrer horisontal scroll
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
   }
+
+#root {
+
+    header{
+        width: 100vw; // vw står for viewport width, den er da alltid lik skjermen
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
   
 
 .logo{
