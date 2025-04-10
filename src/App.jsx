@@ -18,8 +18,10 @@ function App() {
   const [members, setMembers] = useState([])
   const [logg, setLogg] = useState([])
   
+  // Lagrer det som hentes fra Sanity inn i egne states slik at jeg kan bruke det som hentes ut.
 
 
+  // Denne funksjonen lagrer det som hentes fra sanity inn i statene over, det samme gjelder loggTask funksjonen
   const memberCard = async() => {
     const data = await fetchMembersByCard()
     setMembers(data)
@@ -32,7 +34,8 @@ function App() {
   }
 
   
-
+  // Legger inn at funksjonene over skal kjøres når sidene mountes eller det skjer endringer
+  // Kunne lagt inn at dette skal skje hver gang det skjer endringer i member eller logg?
   useEffect(() => {
     memberCard(),
     loggTask()
@@ -40,6 +43,8 @@ function App() {
 
   return (
     <>
+    {/*Layout blir rendret rundt alt annet, slik at vi har med det på hver eneste side som blir mountet.
+    Rutene går til hjemskjermen og det benyttes slug for å hente ut det en ønsker med komponentet MemberLayout*/}
       <Layout>
         <Routes>
           <Route path="/" element={<Home members={members} logg={logg}/>} />

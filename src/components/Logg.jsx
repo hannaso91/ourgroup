@@ -2,10 +2,12 @@ export default function Logg({  logg }) {
     return (
         <>
             <h2>Gruppelogg</h2>
+            {/* Mapper ut innholdet i logg som er hentet som en prop som har blitt sendt fra app */}
             {logg.map((log) => (
                 <article key={log._id}>
                     <p>{log.personName.name}</p>
                     <p>{log.task}</p>
+                    {/* Beskrivelse av koden om dato ligger i komponentet MembersLayout */}
                     <p>{new Date(log.date).toLocaleDateString("no-NO", {
                             day: "2-digit",
                             month: "2-digit",
