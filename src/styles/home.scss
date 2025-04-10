@@ -3,7 +3,7 @@
 }
 main section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 50px;
 }
 
@@ -11,6 +11,14 @@ main section{
     font-weight: bold;
     padding-top: 20px;
 }
+
+.members-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; //
+    gap: 20px;
+    padding: 20px 0;
+  }
 
 .forsidegruppe{
     width: 100%;

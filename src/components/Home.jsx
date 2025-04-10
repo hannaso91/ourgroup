@@ -1,6 +1,6 @@
 import Logg from "./Logg";
 import MembersCard from "./MembersCard";
-import "../styles/home.scss"
+
 
 export default function Home({members, logg }) {
     return(
