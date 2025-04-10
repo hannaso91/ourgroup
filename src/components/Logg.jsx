@@ -13,7 +13,7 @@ export default function Logg({ logg }) {
             <p id="fatname">{log.personName.name}</p>
             <p>{log.task}</p>
 
-            {/* Viser datoen på norsk format, kilde for dette ligger i memberscard komponentet */}
+            {/* Viser datoen på norsk format, kilde for dette ligger i memberslayout komponentet */}
             <p id="fatdate">
               {new Date(log.date).toLocaleDateString("no-NO", {
                 day: "2-digit",
