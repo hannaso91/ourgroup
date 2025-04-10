@@ -5,7 +5,9 @@
     background-color:#C9A48C ;
     border-style: solid;
     border-color: #FFD2F5;
-    max-width: 600px;
+    width: 100%;
+    
+    
 }
 
 .loggforinger{
@@ -14,9 +16,11 @@
     justify-content: center;
     border-style: solid;
     border-color: #fff;
+    background-color: #FFD2F5;
     gap: 10px;
     margin: 1rem;
     padding: 0.5rem;
+    color: #000;
     
 }
 
@@ -40,14 +44,6 @@
                 flex-direction: column;
             }
     }
-    
-    /*.loggforinger{
-        display: flex;
-        flex-direction: column;
-        /*justify-content: center;
-        border-style: solid;
-        border-color: #fff;
-    }*/
     
     #fatname{
         font-weight: bolder;

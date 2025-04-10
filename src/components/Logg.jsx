@@ -1,6 +1,8 @@
+import "../styles/logg.scss"
+
 export default function Logg({  logg }) {
     return (
-        <>
+         <>
         <div className="loggcontainer">
             <h2>Gruppelogg</h2>
             {logg.map((log) => (
