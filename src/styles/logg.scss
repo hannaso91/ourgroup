@@ -1,0 +1,56 @@
+
+.loggcontainer{
+    background-color:#C9A48C ;
+    border-style: solid;
+    border-color: #FFD2F5;
+    max-width: 600px;
+}
+
+.loggforinger{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-style: solid;
+    border-color: #fff;
+    gap: 10px;
+    margin: 1rem;
+    padding: 0.5rem;
+    
+}
+
+#fatname{
+    font-weight: bolder;
+}
+#fatdate{
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 400px),(min-width:1500px){
+    .loggcontainer{
+        background-color:#C9A48C ;
+        border-style: solid;
+        border-color: #FFD2F5;
+        width: 300px;
+        padding: 4px;
+
+            p{
+                display: flex;
+                flex-direction: column;
+            }
+    }
+    
+    /*.loggforinger{
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;
+        border-style: solid;
+        border-color: #fff;
+    }*/
+    
+    #fatname{
+        font-weight: bolder;
+    }
+    #fatdate{
+        font-weight: bolder;
+    }
+}
