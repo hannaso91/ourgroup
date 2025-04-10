@@ -1,0 +1,31 @@
+@media (prefers-color-scheme: dark) {
+    body,
+    main,
+    section,
+    article,
+    h1, h2, h3, p, b, span {
+      color: #000 !important;
+      
+    }
+  
+    .member-card,
+    .loggcontainer {
+      
+      color: #000 !important;
+    }
+  
+    header,
+    footer {
+      
+      color: #000 !important;
+    }
+  
+    a {
+      color: #000 !important;
+    }
+  
+    a:hover {
+      color: #000 !important;
+    }
+  }
+  
