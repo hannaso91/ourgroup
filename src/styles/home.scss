@@ -7,18 +7,20 @@ main section{
     gap: 50px;
 }
 
-#fetnavn{
-    font-weight: bold;
-    padding-top: 20px;
-}
-
 .members-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; //
     gap: 20px;
     padding: 20px 0;
-  }
+}
+
+#fetnavn{
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+
 
 .forsidegruppe{
     width: 100%;
