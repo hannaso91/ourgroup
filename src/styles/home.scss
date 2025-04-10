@@ -1,17 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
 :root{
     background-color: #ffff;
+
+
 }
 
 main section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 50px;
+
+    h1{
+        font-size: 30px;
+        text-align: center;
+        max-width: 100vw;
+    }
 }
+
+.members-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100vw; // forsikrer oss om at det ikke går på utsiden av skjermen
+
+    a{
+        display: inline-block;
+        width: auto;
+        text-decoration: none;
+    }
+  }
+  
+
+  .member-card {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+  
 
 #fetnavn{
     font-weight: bold;
     padding-top: 20px;
 }
+
 
 .forsidegruppe{
     width: 100%;
