@@ -40,7 +40,7 @@ export default function MemberLayout(){
         <>
             {member ? (
                 <>
-            
+            <section className="bildetekst">
             <article>
                 <img src={member.image?.asset?.url} alt="bilde av gruppemedlem"/>
                 <h2 key={member._id}>{member.name}</h2>
@@ -50,14 +50,16 @@ export default function MemberLayout(){
             <article className="mengdetekst">
             <p>{member.description}</p>
             </article>
+            </section>
             
             </>
+        
             ) : (
                 <p>Forsøker å finne medlem.</p>
             )}
-
+            <div className="loggsection" >
             {personLogg.map(log => (
-                <article className="loggsection" key={log._id}>
+                <article key={log._id}>
                     <p>Utført av: {log.personName.name}</p>
                     <p>{log.task}</p>
                     <p>{new Date(log.date).toLocaleDateString("no-NO", {
@@ -68,8 +70,8 @@ export default function MemberLayout(){
                     </p>
                     <p>{log.timeused}</p>
                 </article>
-
             ))}
+            </div>
         </>
        
     )
